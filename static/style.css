@@ -1,3 +1,4 @@
+/* Estilos globales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Contenedor principal */
 header, main, footer {
     max-width: 800px;
     margin: 20px auto;
@@ -15,11 +17,28 @@ header, main, footer {
     border-radius: 8px;
 }
 
+/* Encabezado */
+header .welcome-message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
 header h1 {
     text-align: center;
     color: #2c3e50;
 }
 
+header p {
+    text-align: center;
+    color: #34495e;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+/* Imagen central */
 .center-image {
     text-align: center;
     margin: 20px 0;
@@ -29,18 +48,21 @@ header h1 {
     border-radius: 50%;
 }
 
-h2 {
+/* Sección principal */
+main h2 {
     color: #2980b9;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-label {
+main label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
+    color: #34495e;
 }
 
-input {
+main input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -49,7 +71,7 @@ input {
     box-sizing: border-box;
 }
 
-button {
+main button {
     display: block;
     width: 100%;
     padding: 15px;
@@ -62,12 +84,17 @@ button {
     transition: background 0.3s ease;
 }
 
-button:hover {
+main button:hover {
     background: #2980b9;
 }
 
+/* Pie de página */
 footer {
     text-align: center;
     margin-top: 40px;
     color: #95a5a6;
+}
+
+footer p, footer strong {
+    margin: 5px 0;
 }
