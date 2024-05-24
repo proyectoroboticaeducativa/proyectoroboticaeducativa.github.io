@@ -84,15 +84,15 @@ const generatePDF = async (name, id) => {
 
   firstPage.drawText(IdC, {
     x: 55,
-    y: 70,
-    size: 10,
+    y: 75,
+    size: 5,
   });
 
   const currentTime = new Date().toLocaleString();
   firstPage.drawText(currentTime, {
     x: 55,
-    y: 55,
-    size: 10,
+    y: 70,
+    size: 5,
   });
 
   const qrCodeData = `Certificado de: ${name}\nCon numero de CC: ${id}\nFecha: ${currentTime}\n${IdC}\n`;
